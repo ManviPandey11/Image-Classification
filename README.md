@@ -1,84 +1,45 @@
-# Image-Classification-project
+# CIFAR-10 Image Classification
 
-***1. Project Title and Description***
+## Project Description
+This project implements an image classification model using the CIFAR-10 dataset. The model classifies images into one of ten categories using a Convolutional Neural Network (CNN) built with TensorFlow.
 
-- Title: CIFAR-10 Image Classification with CNN
+## Data Description
+The project uses the CIFAR-10 dataset, which includes images categorized into 10 classes:
+- `airplane`
+- `automobile`
+- `bird`
+- `cat`
+- `deer`
+- `dog`
+- `frog`
+- `horse`
+- `ship`
+- `truck`
 
-- Description: This project demonstrates the implementation of a Convolutional Neural Network (CNN) for image classification using the CIFAR-10 dataset. The CNN model is trained to recognize and classify images into 10 distinct categories.
+The dataset is split into training and testing sets.
 
-***2. Dataset Information***
+## Methodology
+1. **Data Loading:** Load the CIFAR-10 dataset from TensorFlow.
+2. **Data Preprocessing:** Normalize image data.
+3. **Model Building:** Create a CNN model using TensorFlow.
+4. **Model Training:** Fit the model on the training data.
+5. **Model Evaluation:** Evaluate the model's performance on test data.
+6. **Visualization:** Plot accuracy and loss curves.
+7. **Prediction:** Use the model to predict and visualize results.
 
-- Dataset Name: CIFAR-10
+## Results
+- **Test Accuracy:** X%
+- **Sample Predictions:** Examples of image predictions and their categories.
 
-- Description: The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6,000 images per class. The classes are: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck.
+## How to Run the Code
+1. Clone the repository: `git clone <repository_url>`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the Jupyter notebook or Python script.
 
-- Source: TensorFlow Datasets
+## Dependencies
+- tensorflow
+- numpy
+- matplotlib
 
-***3. Model Details***
-
-**Model Architecture:**
-
-- Convolutional Layers: A series of convolutional layers followed by pooling layers to extract features from the images.
-
-- Fully Connected Layers: Dense layers that classify the features into one of the 10 classes.
-
-- Activation Function: ReLU for hidden layers and Softmax for output layer.
-
-**Libraries Used:**
-
-- TensorFlow: For building and training the CNN model.
-
-- NumPy: For handling numerical operations.
-
-- Matplotlib: For visualizing the results.
-
-***4. Project Workflow***
-
-- Load Dataset: The CIFAR-10 dataset is loaded using TensorFlow's dataset API.
-
-- Preprocess Data: Normalize the image data for better model performance.
-
-- Build Model: Define the architecture of the CNN.
-
-- Train Model: Fit the model on the training data.
-
-- Evaluate Model: Assess the model's performance on the test data.
-
-- Visualize Results: Plot accuracy and loss curves to understand the model's learning.
-
-- Make Predictions: Use the trained model to classify new images.
-
-***5. Instructions for Running the Project***
-
-**Download Required Files:**
-
-- Download the Jupyter Notebook (.ipynb file) and model file (.keras) from the GitHub repository.
-
-**Setup Environment:**
-
-- Ensure you have Python installed along with the required libraries: TensorFlow, NumPy, and Matplotlib.
-
-- Open the Notebook:
-Open the notebook in Jupyter Notebook or Google Colab.
-
-- Run Cells:
-Execute the cells in order to load data, train the model, and visualize results.
-
-- Load Model:
-Use the .keras file to load the trained model and make predictions on new images.
-
-***6. Results***
-
-- Model Accuracy: Provide the accuracy achieved by the model on the test dataset.
-
-**Visualizations:**
-
-- Accuracy Curve: Plot showing training and validation accuracy over epochs.
-
-- Loss Curve: Plot showing training and validation loss over epochs.
-
-- Sample Predictions: Display some sample images with their predicted labels.
-
-***7. License***
-
-- License: Specify the license under which the project is shared, such as MIT License. Include a link to the LICENSE file if available.
+## License
+This project is licensed under the MIT License.
